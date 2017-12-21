@@ -20,10 +20,10 @@ import com.droid.ankit.udacityrolodex.data.UserData;
 public class RolodexPageFragment extends Fragment {
     private TextView mFirstName;
     private TextView mLastName;
+    private TextView mEmail;
     private TextView mCompany;
     private TextView mStartDate;
     private TextView mBio;
-    //TODO imageView
     private ImageView mAvatar;
 
     private static final String USER_DATA_KEY = "user_data_key";
@@ -55,6 +55,8 @@ public class RolodexPageFragment extends Fragment {
         mFirstName.setText(userData.getFirstName());
         mLastName = mRootView.findViewById(R.id.tv_lastName);
         mLastName.setText(userData.getLastName());
+        mEmail = mRootView.findViewById(R.id.tv_email);
+        mEmail.setText(userData.getEmail());
         mCompany = mRootView.findViewById(R.id.tv_company);
         mCompany.setText(userData.getCompany());
         mStartDate = mRootView.findViewById(R.id.tv_startDate);
