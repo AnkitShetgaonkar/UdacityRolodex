@@ -4,7 +4,9 @@ package com.droid.ankit.udacityrolodex.data;
 
 import com.google.gson.annotations.SerializedName;
 
-public class UserData {
+import java.io.Serializable;
+
+public class UserData implements Serializable {
 
     @SerializedName("avatar")
     private String mAvatar;

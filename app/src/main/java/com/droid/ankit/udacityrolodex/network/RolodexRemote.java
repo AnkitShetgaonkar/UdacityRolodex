@@ -57,7 +57,6 @@ public class RolodexRemote {
      * @param callback
      */
     public void getRolodexData(final Callback<RolodexUsersResponse> callback) {
-        RolodexUsersResponse rolodexUsersResponse = new RolodexUsersResponse();
         if(mRolodexService == null){
             Log.d(TAG,"Something went wrong");
             callback.failure("Something went wrong");
